@@ -7,8 +7,10 @@
 #cache
 __pycache__
 
-
 #db
 data\downsampled
 data\metrics
 data\raw
+
+#uv.lock
+uv.lock
