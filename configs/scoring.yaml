@@ -1,0 +1,7 @@
+# Attention-score weights — must sum sensibly; tune without code change.
+# visibility = w_area*area + w_center*center + w_sharp*sharpness
+# attention  = visibility * (alpha + (1-alpha)*saliency)
+w_area: 0.5
+w_center: 0.3
+w_sharp: 0.2
+alpha: 0.3

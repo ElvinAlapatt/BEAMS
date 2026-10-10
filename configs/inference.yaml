@@ -1,0 +1,6 @@
+# Inference / sampling settings (Phase 2 tunes these)
+target_fps: 2.0
+detector: yolov8m        # future: models/yolo/beams.pt after finetune
+conf_threshold: 0.35
+iou_threshold: 0.5
+tracker: bytetrack

@@ -1,16 +1,37 @@
-#venv
-.venv
+# venv
+.venv/
 
-#.env
+# env (keep .env.example, ignore real secrets)
 .env
 
-#cache
-__pycache__
+# python cache
+__pycache__/
+*.pyc
+*.pyo
 
-#db
-data\downsampled
-data\metrics
-data\raw
+# videos & datasets (too big for git — see data/README.md)
+data/raw/
+data/downsampled/
+data/processed/
+data/metrics/
+*.mp4
+*.avi
+*.mkv
+*.mov
 
-#uv.lock
-uv.lock
+# model weights (too big for git — see models/README.md)
+models/*.pt
+models/*.onnx
+models/*.bin
+
+# reports generated locally
+reports/*.pdf
+reports/*.csv
+
+# streamlit / editor
+.streamlit/secrets.toml
+.vscode/
+.idea/
+
+# pytest
+.pytest_cache/
